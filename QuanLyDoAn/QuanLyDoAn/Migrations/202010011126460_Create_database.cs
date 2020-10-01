@@ -12,7 +12,7 @@ namespace QuanLyDoAn.Migrations
                 c => new
                     {
                         UserName = c.String(nullable: false, maxLength: 50),
-                        Password = c.String(maxLength: 256),
+                        Password = c.String(nullable: false, maxLength: 256),
                         Email = c.String(unicode: false),
                         CreationTime = c.DateTime(precision: 7, storeType: "datetime2"),
                         EmailConfirmed = c.Boolean(),

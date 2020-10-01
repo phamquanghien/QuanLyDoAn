@@ -13,7 +13,15 @@ namespace QuanLyDoAn.Models
         public string UserName { get; set; }
 
         [StringLength(256)]
+        [Required(ErrorMessage = "Password is required.")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
+        [StringLength(256)]
+        [Required(ErrorMessage = "Confirm Password is required.")]
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Password and confirm password does not match.")]
+        [NotMapped]
+        public string ConfirmPassWord { get; set; }
 
         public string Email { get; set; }
 

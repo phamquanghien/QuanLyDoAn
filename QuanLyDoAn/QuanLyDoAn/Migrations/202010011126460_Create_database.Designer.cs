@@ -13,7 +13,7 @@ namespace QuanLyDoAn.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202005290822113_Create_database"; }
+            get { return "202010011126460_Create_database"; }
         }
         
         string IMigrationMetadata.Source
