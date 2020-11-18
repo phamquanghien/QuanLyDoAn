@@ -12,13 +12,17 @@ namespace QuanLyDoAn.Models
         {
         }
 
-        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Accounts> Accounts { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>()
+            modelBuilder.Entity<Accounts>()
                 .Property(e => e.Email)
                 .IsUnicode(false);
         }
+
+        public System.Data.Entity.DbSet<QuanLyDoAn.Models.Teacher> Teachers { get; set; }
     }
 }
