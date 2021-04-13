@@ -137,14 +137,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Admins\AdminsAreaRegistration.cs" />
-    <Compile Include="Areas\Admins\Controllers\Account_AdController.cs" />
-    <Compile Include="Areas\Admins\Controllers\Home_AdController.cs" />
-    <Compile Include="Areas\Admins\Controllers\Role_AdController.cs" />
-    <Compile Include="Areas\Lectures\LecturesAreaRegistration.cs" />
-    <Compile Include="Areas\Students\StudentsAreaRegistration.cs" />
-    <Compile Include="Controllers\AccountsController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -165,12 +157,6 @@
       <DependentUpon>202011110849438_Test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Process\StringProcess.cs" />
-    <Compile Include="Models\Process\UserRoleProvider.cs" />
-    <Compile Include="Models\QLDADbContext.cs" />
-    <Compile Include="Models\Accounts.cs" />
-    <Compile Include="Models\Roles.cs" />
-    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -206,21 +192,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Areas\Admins\Views\web.config" />
-    <Content Include="Areas\Lectures\Views\web.config" />
-    <Content Include="Areas\Students\Views\web.config" />
-    <Content Include="Areas\Admins\Views\Role_Ad\Create.cshtml" />
-    <Content Include="Areas\Admins\Views\Role_Ad\Delete.cshtml" />
-    <Content Include="Areas\Admins\Views\Role_Ad\Details.cshtml" />
-    <Content Include="Areas\Admins\Views\Role_Ad\Edit.cshtml" />
-    <Content Include="Areas\Admins\Views\Role_Ad\Index.cshtml" />
-    <Content Include="Areas\Admins\Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Areas\Admins\Views\Account_Ad\Create.cshtml" />
-    <Content Include="Areas\Admins\Views\Account_Ad\Delete.cshtml" />
-    <Content Include="Areas\Admins\Views\Account_Ad\Details.cshtml" />
-    <Content Include="Areas\Admins\Views\Account_Ad\Edit.cshtml" />
-    <Content Include="Areas\Admins\Views\Account_Ad\Index.cshtml" />
-    <Content Include="Areas\Admins\Views\Home_Ad\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -336,13 +307,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admins\Data\" />
-    <Folder Include="Areas\Lectures\Controllers\" />
-    <Folder Include="Areas\Lectures\Data\" />
-    <Folder Include="Areas\Lectures\Views\Shared\" />
-    <Folder Include="Areas\Students\Controllers\" />
-    <Folder Include="Areas\Students\Data\" />
-    <Folder Include="Areas\Students\Views\Shared\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
